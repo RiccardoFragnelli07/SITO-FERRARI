@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.contenitore{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.half{
+    flex: 1;
+    overflow: hidden;
+}
+
+.half a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.half img{
+    width: 100%;
+    height: 100%; /* o qualunque altezza vuoi */
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease, filter 0.5s ease;
+    filter: brightness(100%);
+}
+
+.half img:hover {
+    transform: scale(1.05);
+    filter: brightness(85%);
+}
+
+/* Ombra leggera */
+.half {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive per schermi piccoli */
+@media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+}
+
+.testo-sopra1 {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 80px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px black;
+    z-index: 2;
+    pointer-events: none; /* opzionale: clic passano alle immagini */
+}
+
+.testo-sopra2 {
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 100px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px black;
+    z-index: 2;
+    pointer-events: none; /* opzionale: clic passano alle immagini */
+}
