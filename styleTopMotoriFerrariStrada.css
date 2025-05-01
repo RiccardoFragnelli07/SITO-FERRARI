@@ -1,0 +1,54 @@
+*{
+    background-color: black;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1{
+    font-size: 50px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.styleP{
+    text-align: center;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.styleTitoli{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul{padding: 0;list-style-type: none;}
+.menu ul li{display: inline-block;}
+.menu ul li a{padding: 10px; display: block;}
+
+
+.designImg1{
+    float: left;
+    width: 20%;
+    margin-left: 0%;
+    padding: 10px;
+    margin-top: -3%;
+}
+
+.designImg2{
+    float: right;
+    width: 20%;
+    margin-right: 0%;
+    margin-top: -2%;
+    padding: 10px;
+}
+
+.designImg3{
+    float: right;
+    width: 20%;
+    padding: 5px;
+    margin-top: -4%;
+}
