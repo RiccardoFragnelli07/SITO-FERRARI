@@ -34,30 +34,6 @@ footer{
 .menu ul li a{padding: 10px; display: block;}
 
 
-.designImg1{
-    float: left;
-    width: 20%;
-    margin-left: 0%;
-    padding: 5px;
-    margin-top: -3%;
-}
-
-.designImg2{
-    float: right;
-    width: 20%;
-    margin-right: 0%;
-    margin-top: -2%;
-    padding: 5px;
-}
-
-.designImg3{
-    float: right;
-    width: 20%;
-    padding: 5px;
-    margin-top: -4%;
-}
-
-
 .auto-contenitore {
     display: flex;
     align-items: flex-start;
@@ -79,4 +55,6 @@ footer{
     border-radius: 8px;
 }
 
-
+@media (max-width: 900px){
+    .auto-contenitore{flex-direction: column;}
+}
